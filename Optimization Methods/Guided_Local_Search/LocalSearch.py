@@ -24,7 +24,6 @@ class LocalSearch:
       for i in range(len(f_s)):
         if f_s[i] < f_i[i]:
           x[i] = x_s[i]
-          self.history.append(f"iteration: {n}, vector: {x}, component: {i + 1}, function: {f_s} \n")
       delta_f = f_s - f_i
     return x, n
 
@@ -46,5 +45,3 @@ if __name__ == '__main__':
   x = np.array([20.])
   root, n = ls.root(x, f)
   print(root, n, '\n')
-  for hist_row in ls.history[-5::]:
-    print(hist_row)
