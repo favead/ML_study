@@ -12,7 +12,7 @@ class LocalSearch:
     self.step = step
     self.history = []
 
-  def root(self, x: np.array, f: Callable[[np.array], np.array]) -> np.array:
+  def _root(self, x: np.array, f: Callable[[np.array], np.array]) -> np.array:
     n = 0
     delta_f = 2 * self.eps
     while (np.max(np.abs(delta_f)) >= self.eps) & (self.nsteps > n):
