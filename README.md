@@ -1,2 +1,2 @@
-# ML_research
-The repository contains my research activity in the field of optimization methods.
+# Репозиторий - база знаний
+Представляет собой сборник ноутбуков и кода по проектам и дисциплинам связанным с ML
